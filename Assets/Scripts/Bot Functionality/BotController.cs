@@ -15,6 +15,7 @@ public class BotController : MonoBehaviour
     public void Awake() {
         DontDestroyOnLoad(this);
     }
+    public WordEmitter wordEmit;
 
     public void Start() {
         sensor = GetComponent<BotSensor>();
@@ -67,6 +68,7 @@ public class BotController : MonoBehaviour
             //Instantiate(deathFX, transform.position, Quaternion.identity);
         }
         else {
+            wordEmit.SpawnText();
             audioManager.Play("Hit");
             //Instantiate(damageFX, transform.position, Quaternion.identity);
         }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2157920572083576390}
   - component: {fileID: 3710091414241132700}
   - component: {fileID: 4803837761002279098}
+  - component: {fileID: -2545183840161908885}
   - component: {fileID: 1905763343590494314}
   - component: {fileID: 7142551804239465023}
   m_Layer: 0
@@ -102,6 +103,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab71af02dec8cda499a2f4310365d216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DamageTakenEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  wordEmit: {fileID: -2545183840161908885}
+--- !u!114 &-2545183840161908885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905763343590494307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ea48a77bee23c44d91a6e39a68e33cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EmittedWords:
+  - ouchie
+  - ow
+  - oof
+  DurationInFrames: 300
+  StartScale: 0
+  EndScale: 0.5
+  StartOffset: {x: 0, y: 1, z: 0}
+  EndOffset: {x: 0, y: 2, z: 0}
+  StartColor: {r: 1, g: 1, b: 1, a: 1}
+  EndColor: {r: 1, g: 1, b: 1, a: 0}
 --- !u!95 &1905763343590494314
 Animator:
   serializedVersion: 3
@@ -340,7 +368,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -786320585
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 39deb41d956f4194d9dd7e71b59a208f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -422,7 +450,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -786320585
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 169f5099e6918634dad4c1819675f679, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
