@@ -16,7 +16,7 @@ public class CooldownBar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //get the botcontroller located in HealthAndCDHoolder script
+        //get the botcontroller located in HealthAndCDHolder script
         botController = transform.parent.GetComponentInParent<HealthAndCDHolder>().GetBotController();
         //get the botpart
         botPart = botController.slots.GetSlotBotPart(slotPosition);
