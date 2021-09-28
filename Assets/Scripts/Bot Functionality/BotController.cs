@@ -84,7 +84,7 @@ public class BotController : MonoBehaviour
         }
         else
         {
-            audioManager.Play("Hit");
+            AudioManager.instance.Play("Hit");
             //Instantiate(damageFX, transform.position, Quaternion.identity);
         }
     }
